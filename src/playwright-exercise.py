@@ -4,7 +4,7 @@ import asyncio
 from playwright.async_api import async_playwright
 
 async def run_playwright():
-    # 비동기 방식으르 playwright 시작
+    # 비동기 방식으로 playwright 시작
     async with async_playwright() as p:
         # 브라우저 실행 (headless=False 로 설정하면 실제 브라우저 창이 뜸)
         browser = await p.chromium.launch(headless=False)
@@ -33,7 +33,7 @@ async def run_playwright():
         await browser.close()
 
 async def run_extract():
-    # 비동기 방식으르 playwright 시작
+    # 비동기 방식으로 playwright 시작
     async with async_playwright() as p:
         # 브라우저 실행 (headless=False 로 설정하면 실제 브라우저 창이 뜸)
         browser = await p.chromium.launch(headless=False)
